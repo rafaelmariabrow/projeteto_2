@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./simbolos matematicos.jpeg" alt="símbolos matemáticos">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+        
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" required>
+        
+        <input type="submit">Cadastrar</button>
+        </form>
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+        </table>
+        <script>
+            // Função para adicionar um contato à tabela
+            function addContact() {
+                var nameInput = document.getElementById("name");
+                var phoneInput = document.getElementById("phone");
+                var contactTable = document.getElementById("contactTable");
+        
+                var name = nameInput.value;
+                var phone = phoneInput.value;
+        
+                var row = contactTable.insertRow(-1);
+                var nameCell = row.insertCell(0);
+                var phoneCell = row.insertCell(1);
+        
+                nameCell.innerHTML = name;
+                phoneCell.innerHTML = phone;
+        
+                nameInput.value = "";
+                phoneInput.value = "";
+            }
+        
+            var form = document.getElementById("contactForm");
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Impede o envio do formulário
+        
+                addContact();
+            });
+        
+            function validarFormulario() {
+                const campoA = document.getElementById("campo-a").value;
+                const campoB = document.getElementById("campo-b").value;
+        
+                if (campoB > campoA) {
+                    return true;
+                } else {
+                    alert("O número B deve ser maior que o número A.");
+                    return false;
+                }
+            }
+        </script>
+        
+    </div>
+</body>
+</html>

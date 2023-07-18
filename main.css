@@ -1,0 +1,110 @@
+*{
+    /titleAgenda  Contatos/title>
+    style>
+    table
+        border-collapse:div.outer p {
+            color:orange;
+        }
+        div:not(.outer) p {
+            color: lime;
+        }
+        width : 100%; 
+}
+
+body{
+    background: color #e7e7e7; 
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+} 
+
+form {
+    display:flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+form input {
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px;
+}
+
+form button {
+    background-color: #009432;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+table{
+    width: 100%;
+}
+
+table th {
+    padding: 16x;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid #000;
+}
+
+tbody tr {
+    padding: 8px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #0000;
+}
+
+table tr img {
+    height: 100px;
+}
+
+    input[type="text"] {
+        padding: 8px;
+        font-weight: bold;
+        color: #000;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        padding: 6px 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    style>
+    head body h1 {
+        color: green;
+    }
+    html h1 {
+        color: chocolate;
+    }
